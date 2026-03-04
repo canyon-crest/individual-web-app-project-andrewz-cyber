@@ -35,16 +35,11 @@ footer {
 }
 
 #awards {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    max-width: 800px;
     color: #d3d3d3;
-    text-align: center;
+    text-align:center;
+    margin-left:200px;
     font-style: italic;
-    z-index: 500;
+    width:70%;
 }
 
 #background{
@@ -84,11 +79,16 @@ li a {
     text-decoration: none;
 }
 
-li hover{
-    background-color: #111;
+li:hover{
+    background-color: #691111;
+    border-radius:1px;
 }
 
 li a.active {
     background-color: #ff000054;
    color: #000000;
+}
+
+.indexline{
+    width:70%;
 }
