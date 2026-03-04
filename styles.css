@@ -8,14 +8,17 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: black;       
-    z-index: 1000;                
+    background-color: black;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
 }
 
-body > main,            
+body > main,
 body > .content {
-    padding-top: 48px;     
+    padding-top: 48px;
     padding-bottom: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 footer {
@@ -35,16 +38,10 @@ footer {
 }
 
 #awards {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    max-width: 800px;
     color: #d3d3d3;
-    text-align: center;
     font-style: italic;
-    z-index: 500;
+    width:70%;
+    margin-left:200px;
 }
 
 #background{
@@ -80,15 +77,172 @@ li a {
     display: block;
     color: #ff0000;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 40px;
     text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
-li hover{
-    background-color: #111;
+li:hover{
+    background-color: #ff0000;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+li:hover a {
+    color: #000000;
+    transform: scale(1.05);
 }
 
 li a.active {
-    background-color: #ff000054;
-   color: #000000;
+    background-color: #ff0000;
+    color: #000000;
+    font-weight: 700;
+    border-bottom: 3px solid #ffff00;
+}
+
+.indexline {
+    width:70%;
+}
+
+.character {
+    width:300px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.character-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 15px;
+    width: 340px;
+    height: 550px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: top;
+}
+
+.characters-container {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 40px;
+    margin: 80px auto 60px auto;
+    width: fit-content;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    max-width: calc(100% - 120px);
+}
+
+.description {
+    color: #d3d3d3;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.weapon-description {
+    color: #d3d3d3;
+    line-height: 1.6;
+    flex-grow: 1;
+    font-style: italic;
+}
+
+.heading {
+    font-size: 100px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    color:#000000;
+    text-shadow:
+        1px 0 0 red,
+       -1px 0 0 red,
+        0 1px 0 red,
+        0 -1px 0 red,
+        1px 1px 0 red,
+       -1px -1px 0 red,
+        1px -1px 0 red,
+       -1px 1px 0 red;
+}
+
+.weapon-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.weapon-box img {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.weapon-box .weapon-description {
+    flex-grow: 1;
+    margin: 0;
+    margin-top:70px;
+    margin-left:100px;
+    margin-right:100px;
+}
+
+.fixed-button {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    padding: 15px 25px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.5);
+    margin-bottom:50px;
+}
+
+.fixed-button:hover {
+    background-color: #ffff00;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(255, 0, 0, 0.7);
+}
+
+.image-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.image-overlay.active {
+    display: flex;
+}
+
+.image-overlay img {
+    max-width: 80vw;
+    max-height: 80vh;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+#indexp{
+    color: #d3d3d3;
+    line-height: 1.6;
+    font-family: 'Georgia', serif;
+    width:70%;
+    margin-left:200px;
 }

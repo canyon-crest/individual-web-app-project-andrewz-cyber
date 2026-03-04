@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS | Variables and Methods</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img id="background" src="https://images5.alphacoders.com/111/thumb-1920-1113634.png">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="character.html">Characters</a></li>
+            <li><a href="weapons.html">Weapons</a></li>
+        </ul>
+    </nav>
+    <button class="fixed-button">↑ To Top</button>
+    <main>
+        <br><br>
+        <h1 class="heading">Characters</h1>
+        
+        <div class="characters-container">
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/32/FP_Zagreus.png/revision/latest?cb=20181212021124">
+                <p class="description">Zagreus — the prince of the Underworld, son of Hades and Persephone. He
+                    repeatedly attempts to escape the Underworld to learn the truth about his family and origins.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/0a/FP_Hades.png/revision/latest?cb=20181212021114">
+                <p class="description">Hades — ruler of the Underworld, stern and duty-bound. He governs the realm of
+                    the dead and has a complicated relationship with his son, Zagreus.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/cf/FP_Nyx.png/revision/latest?cb=20200823220402">
+                <p class="description">Nyx — primordial goddess of the night. A shadowy, maternal figure in Zagreus's
+                    life who offers guidance and protection from the shadows.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/de/FP_Thanatos.png/revision/latest?cb=20230123002410">
+                <p class="description">Thanatos — the god/embodiment of Death. Calm and duty-focused, he enforces the
+                    rules of the dead and sometimes aids Zagreus.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/29/FP_Hypnos.png/revision/latest?cb=20200823222318">
+                <p class="description">Hypnos — god of Sleep and Thanatos's brother; a wry, sleepy presence around the
+                    House of Hades with a dry sense of humour.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1d/FP_Charon.png/revision/latest?cb=20200823215934">
+                <p class="description">Charon — the Underworld's ferryman and proprietor of a stern shop. He deals in
+                    passage and goods for those who can pay his price.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/7f/FP_Megaera.png/revision/latest?cb=20230123002253">
+                <p class="description">Megaera — one of the Furies; a fierce combatant and recurring challenger in
+                    Zagreus's escape attempts.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/da/FP_Alecto.png/revision/latest?cb=20230123002528">
+                <p class="description">Alecto — one of the Fury sisters, proud and relentless in battle; she appears as
+                    a formidable opponent.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/9c/FP_Tisiphone.png/revision/latest?cb=20230123002450">
+                <p class="description">Tisiphone — the third Fury sister, driven by vengeance and intense in her fights
+                    with Zagreus.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/72/FP_Chaos.png/revision/latest?cb=20230123014352">
+                <p class="description">Chaos — a primordial force who offers mysterious, often risky boons to Zagreus;
+                    an ancient and enigmatic presence.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1c/FP_Zeus.png/revision/latest?cb=20181212021131">
+                <p class="description">Zeus — king of the Olympian gods; a powerful patron who offers lightning-themed
+                    aid and has important ties to the wider Olympian cast.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/26/FP_Poseidon.png/revision/latest?cb=20181212021121">
+                <p class="description">Poseidon — god of the sea; an Olympian patron known for wave and knockback boons
+                    and a strong personality.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/44/FP_Athena.png/revision/latest?cb=20230123012447">
+                <p class="description">Athena — goddess of wisdom and strategic warfare; an Olympian ally who provides
+                    defensive and tactical boons.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/c6/FP_Artemis.png/revision/latest?cb=20190117084925">
+                <p class="description">Artemis — goddess of the hunt; an Olympian who grants boons that favor precision
+                    and critical strikes.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/cc/FP_Aphrodite.png/revision/latest?cb=20230123012313">
+                <p class="description">Aphrodite — goddess of love and charm; an Olympian patron associated with charms
+                    and damage-mitigating boons.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/98/FP_Ares.png/revision/latest?cb=20230123011454">
+                <p class="description">Ares — god of war; a fierce Olympian whose boons emphasize heavy damage and
+                    combat escalation.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/66/FP_Dionysus.png/revision/latest?cb=20230123011541">
+                <p class="description">Dionysus — god of wine; an Olympian patron known for boons that apply lingering
+                    effects like toxin/poison.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/16/FP_Hermes.png/revision/latest?cb=20230123012857">
+                <p class="description">Hermes — messenger god; offers agile, speed-and-mobility focused boons that help
+                    Zagreus move quickly through fights.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/14/FP_Demeter.png/revision/latest?cb=20230123013205">
+                <p class="description">Demeter — goddess of the harvest; an Olympian patron whose powers tend to slow or
+                    chill enemies and control the battlefield.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ed/FP_Achilles.png/revision/latest?cb=20200824034924">
+                <p class="description">Achilles — famed hero and a stern mentor figure. He appears as a legendary
+                    presence who trains and counsels Zagreus.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/80/FP_Patroclus.png/revision/latest?cb=20200824035233">
+                <p class="description">Patroclus — close companion of Achilles; a supporting character connected to the
+                    heroic stories that intersect with Zagreus's journey.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/13/FP_Theseus.png/revision/latest?cb=20230123014056">
+                <p class="description">Theseus — legendary Athenian hero who appears as a major adversary in certain
+                    parts of Zagreus's escape.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b2/FP_Asterius.png/revision/latest?cb=20190616211948">
+                <p class="description">Asterius — the Minotaur, a powerful warrior who often challenges Zagreus
+                    alongside Theseus in later encounters.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/48/FP_Dusa.png/revision/latest?cb=20181210043938">
+                <p class="description">Dusa — a shy gorgon maid who works in the House of Hades and becomes a gentle
+                    friend and ally to Zagreus.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e3/FP_Skelly.png/revision/latest?cb=20200824035330">
+                <p class="description">Skelly — a cheerful skeleton who trains Zagreus and helps teach combat basics; a
+                    friendly presence in the House.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/d6/FP_Eurydice.png/revision/latest?cb=20210729084124">
+                <p class="description">Eurydice — an Underworld resident connected to Orpheus and brings her own
+                    personal story that intersects with Zagreus's life.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/c0/FP_Orpheus.png/revision/latest?cb=20210729084304">
+                <p class="description">Orpheus — a famous musician of the Underworld who tells stories, sings, and has
+                    ties to Eurydice and Zagreus's circle.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/26/FP_Cerberus.png/revision/latest?cb=20181212021108">
+                <p class="description">Cerberus — the three-headed hound of the Underworld; loyal and protective, a
+                    memorable companion in Zagreus's home.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/0e/FP_Sisyphus.png/revision/latest?cb=20210729084333">
+                <p class="description">Sisyphus — the eternally struggling figure known for his boulder; he has his own
+                    story and interactions within the Underworld.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/6d/FP_Bouldy.png/revision/latest?cb=20230123015154">
+                <p class="description">Bouldy — a young boulder companion related to Sisyphus; a small but charming
+                    character in the Underworld community.</p>
+            </div>
+
+            <div class="character-box">
+                <img class="character"
+                    src="https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/d0/FP_Persephone.png/revision/latest?cb=20230123015342">
+                <p class="description">Persephone — queen of the Underworld and Zagreus's mother; central to the game's
+                    emotional core and Zagreus's motivation.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+<footer>
+    <p id="copyright">&copy; 2026 ANDREWZHENG</p>
+</footer>
+
+</html>
